@@ -6,6 +6,7 @@
   <title>MicroDSI · Lab</title>
   <link rel="stylesheet" href="assets/styles.css"/>
 </head>
+
 <body>
   <header class="topbar">
     <div class="row">
@@ -13,6 +14,7 @@
         <b>MicroDSI</b>
         <span>Lab · Inventario + Priorización + SIPOC</span>
       </div>
+
       <nav class="nav">
         <a class="btn" href="index.html">Inicio</a>
         <a class="btn" href="feed.html">Feed</a>
@@ -22,10 +24,13 @@
   </header>
 
   <main class="container">
+
+    <!-- INTRO -->
     <section class="panel">
       <h3>🧪 Laboratorio</h3>
       <p>
-        Aquí se fabrica el entregable. Escribe rápido, pero deja huella: 1 dato o condición por decisión.
+        Aquí se fabrica el entregable. Escribe rápido, pero deja huella:  
+        1 dato o condición por decisión.  
         Cuando estés listo, genera el Markdown y descárgalo.
       </p>
 
@@ -38,7 +43,10 @@
 
     <hr class="sep"/>
 
+    <!-- INVENTARIO + PRIORIZACIÓN -->
     <section class="formRow">
+
+      <!-- INVENTARIO -->
       <div class="panel">
         <h3>1) Inventario (L1) — “Verbo + Objeto”</h3>
         <label>10–15 procesos, uno por línea</label>
@@ -46,6 +54,7 @@
         <div class="footerHint">Atajo mental: si no empieza con un verbo, no pasa el filtro.</div>
       </div>
 
+      <!-- PRIORIZACIÓN -->
       <div class="panel">
         <h3>2) Priorización — Top 5</h3>
         <label>Formato sugerido (1 por línea): Proceso | Impacto | Esfuerzo | Riesgo | Score | Nota</label>
@@ -54,13 +63,16 @@
           Score recomendado: Impacto − Esfuerzo − Riesgo (o usa ratio, pero no mezcles).
         </div>
       </div>
+
     </section>
 
     <hr class="sep"/>
 
+    <!-- SIPOC -->
     <section class="panel">
       <h3>3) SIPOC — el “contrato” (1 página)</h3>
       <label>Completa Suppliers / Inputs / Process (4–6 pasos) / Outputs / Customers</label>
+
       <textarea id="sipoc" placeholder="Suppliers: ...&#10;Inputs: ... (PII: sí/no)&#10;Process: 1) ... 2) ... 3) ... 4) ...&#10;Outputs: ...&#10;Customers: ..."></textarea>
 
       <div class="actions">
@@ -69,18 +81,20 @@
       </div>
 
       <div class="footerHint">
-        Mini-chequeo: ¿hay cliente claro? ¿outputs claros? ¿4–6 pasos? ¿1 restricción (PII/auditoría/criticidad)?
+        Mini‑chequeo: ¿hay cliente claro? ¿outputs claros? ¿4–6 pasos? ¿1 restricción (PII/auditoría/criticidad)?
       </div>
     </section>
 
     <hr class="sep"/>
 
+    <!-- SALIDA MARKDOWN -->
     <section class="panel">
       <h3>Salida (Markdown)</h3>
       <label>Se genera aquí (puedes copiar/pegar o descargar)</label>
       <textarea id="mdOut" placeholder="Aquí aparecerá el Markdown exportable..."></textarea>
-      <div class="footerHint">Consejo: añade 2 líneas finales con tu trade-off principal y la restricción dominante.</div>
+      <div class="footerHint">Consejo: añade 2 líneas finales con tu trade‑off principal y la restricción dominante.</div>
     </section>
+
   </main>
 
   <script src="assets/app.js"></script>
